@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #2F3624;
+  color: white;
+  z-index: 10;
+}
+header a, footer a {
+  text-decoration: underline;
+  color: white;
+}
+header a:hover, footer a:hover {
+  color: #f2cb7c;
+}
+header img, footer img {
+  position: relative;
+  bottom: 4;
+}
+
+header ul {
+  padding: 60px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+}
+header ul li {
+  visibility: hidden;
+  padding: 5px 15px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #2F3624;
+}
+header ul li:hover {
+  background-color: hsl(81, 20%, 28%);
+}
+header ul a {
+  text-decoration: none;
+}
+header ul:hover li {
+  visibility: visible;
+}
+
+footer {
+  height: 150px;
+}
+footer a {
+  padding: 10px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  background-color: #2F3624;
+  border-radius: 0;
+}
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/download.jpg);
+  background-size: cover;
+  background-position: center 53%;
+  filter: blur(3px);
+  transform: scale(1.1);
+  z-index: 1;
+  opacity: 50%;
+}
+.cover h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: #f2cb7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.gallery {
+  width: 90%;
+  background-color: #EEE2D2;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.7fr));
+  justify-content: center;
+  gap: 2em;
+  margin: 15px;
+}
+.gallery .gallery-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+.gallery .gallery-item img {
+  height: auto;
+}
+.gallery .gallery-item .desc {
+  font-size: 1.5em;
+  padding: 10px;
+}
+.gallery .gallery-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-items: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.grid-container img {
+  height: auto;
+}
+
+section {
+  background-color: #EEE2D2;
+  margin: 10px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+}
+section img {
+  height: 60%;
+  width: 60%;
+}
+section button {
+  border: none;
+  background-color: #c28e2d;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 10px;
+}
+section ul {
+  list-style-position: inside;
+}
+section .packages {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+section .services {
+  background-color: #2F3624;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+form {
+  background-color: #EEE2D2;
+  margin: 10px;
+  padding: 20px;
+  width: 60%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 5px;
+  border-radius: 5px;
+}
+form textarea {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+#lightbox button {
+  z-index: 10;
+  position: absolute;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#lightbox .prev-btn {
+  left: 5%;
+}
+#lightbox .next-btn {
+  right: 5%;
+}
+#lightbox .project-button {
+  position: absolute;
+  bottom: 5%;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

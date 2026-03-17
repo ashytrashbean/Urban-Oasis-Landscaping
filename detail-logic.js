@@ -3,7 +3,7 @@ const projectData = [
         id: "bohemian-retreat",
         title: "The Bohemian Retreat",
         tagline:"Coastal Comfort on the Covered Porch",
-        mainImg:"/portfolio-images/1.png",
+        mainImg:"portfolio-images/1.png",
         challange:{
             text:"The 'before' space was clean but lacked character. It had great bones but felt cold and neglected.",
             points:["Bare walls and decking", "No definition or personality"]
@@ -19,7 +19,7 @@ const projectData = [
         id: "floral-sanctuarty",
         title: "Floral Sanctuary",
         tagline:"A Pink Paradise in the City",
-        mainImg:"/portfolio-images/2.png",
+        mainImg:"portfolio-images/2.png",
         challange:{
             text:"The client wanted a high-impact floral look but had a very limited budget and tight space.",
             points:["Limited floor space","Very windy conditions"]
@@ -33,7 +33,7 @@ const projectData = [
         id: "urban-jungle",
         title: "The Urban Jungle",
         tagline:"Maximalist Greenery for Privacy",
-        mainImg:"/portfolio-images/3.png",
+        mainImg:"portfolio-images/3.png",
         challange:{
             text:"The client wanted to elevate the look of their drab, bland apartment balcony into an enchanting and inviting outdoor space.",
             points:["Dull and uninviting space","Unattractive wood planks and lack of decor","Basic lighting fixture"]
@@ -48,7 +48,7 @@ const projectData = [
         id: "sunrise-nook",
         title: "Bistro Sunrise Nook",
         tagline:"Morning Coffee with a View",
-        mainImg:"/portfolio-images/4.png",
+        mainImg:"portfolio-images/4.png",
         challange:{
             text:"A tiny 'Bistro' balcony that the client thought was too small for furniture.",
             points:["Extremely narrow layout", "Direct morning sun"]
@@ -62,7 +62,7 @@ const projectData = [
         id: "sunset-lounge",
         title: "Sunset Lounge",
         tagline:"High-Rise Golden Hour Haven",
-        mainImg:"/portfolio-images/5.png",
+        mainImg:"portfolio-images/5.png",
         challange:{
             text:"With stunning views but zero personality, this balcony felt 'naked' and uninviting for evening relaxation.",
             points:["Empty corner syndrome", "Exposed glass railing", "No designated seating area"]
@@ -76,7 +76,7 @@ const projectData = [
         id: "zen-escape",
         title: "Modern Zen Escape",
         tagline:"Minimalist Mindfulness",
-        mainImg:"/portfolio-images/6.png",
+        mainImg:"portfolio-images/6.png",
         challange:{
             text:"Minimalist Mindfulness",
             points:["Narrow walking path", "Sterile flooring", "Limited light in certain corners"]
